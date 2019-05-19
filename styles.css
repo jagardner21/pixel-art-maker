@@ -1,0 +1,45 @@
+.square {
+    height: 10px;
+    width: 10px;
+    border: 0.75px solid grey;
+}
+
+/* CREATE FUNCTION TO SET WIDTH BASED ON HEIGHT/WIDTH */
+.width {
+    width: 500px;
+}
+
+.circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.blue {
+    background-color: blue
+}
+
+.mediumspringgreen {
+    background-color: mediumspringgreen;
+}
+
+.crimson {
+    background-color: crimson;
+}
+
+.coral {
+    background-color: coral;
+}
+
+.black {
+    background-color: black;
+}
+
+.lightgrey {
+    background-color: lightslategrey
+}
+
+.white {
+    background-color: white;
+}
