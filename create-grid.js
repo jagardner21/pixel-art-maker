@@ -6,9 +6,9 @@ function createGrid(height, width) {
         newRow.classList.add('row');
         for (let j = 0; j < width; j++) {
             var newSquare = document.createElement('div');
-            newSquare.classList.add('square')
+            newSquare.classList.add('square');
             newRow.appendChild(newSquare);
-
+            
         }
         grid.appendChild(newRow);
     }
@@ -21,17 +21,16 @@ let currentColor = '';
 function changeColor(event) {
     event.srcElement.style.backgroundColor = currentColor;
     event.srcElement.style.border = `${currentColor}`
-
+    
 }
 
 
 function selectColor(event) {
     circleClasses = event.srcElement.className;
     currentColor = circleClasses.split(' ')[1];
-    console.log(currentColor)
-    console.log(event);
+    document.getElementById("currentColor").style.backgroundColor = currentColor;
 }
 
 function refresh() {
-    //for "Clear" button
+    location.reload();
 }
